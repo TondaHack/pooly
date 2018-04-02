@@ -1,5 +1,10 @@
 # Pooly
 
+Learning project based on book: The Little Elixir Otp Guidebook Code
+Thank you Benjamin Tan Wei Hao for amazing book
+
+[Original source code](https://github.com/benjamintanweihao/the-little-elixir-otp-guidebook-code)
+
 **TODO: Add description**
 
 ## Installation
@@ -14,28 +19,11 @@ def deps do
   ]
 end
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
+c
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/pooly](https://hexdocs.pm/pooly).
 
 
-Start simple supervisor
-```
-{:ok, worker_sup} = Pooly.WorkerSupervisor.start_link({SampleWorker, :start_link, []})
-```
-Start child
-```
-Supervisor.start_child(worker_sup, [[]])
-```
-Children info
-```
-{:ok, worker_pid } = Supervisor.which_children(worker_sup)
-```
-Stop Worker (child)
-```
-SampleWorker.stop(worker_pid)
-````
 
 
 
